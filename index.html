@@ -4,255 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lauren Thomas</title>
-  <style>
-    :root {
-      --bg: #faf8f5;
-      --text: #1a1a1a;
-      --muted: #6b6b6b;
-      --accent: #b05c3b;
-      --accent-light: #f3ede8;
-      --border: #e0d8d0;
-      --max-width: 680px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Georgia', 'Times New Roman', serif;
-      font-size: 17px;
-      line-height: 1.7;
-      padding: 0 1.5rem;
-    }
-
-    .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 4rem 0 6rem;
-    }
-
-    /* Header */
-    header {
-      margin-bottom: 2.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0;
-    }
-
-    header h1 {
-      font-size: 2.4rem;
-      font-weight: normal;
-      letter-spacing: -0.5px;
-      margin-bottom: 0.4rem;
-    }
-
-    header .tagline {
-      color: var(--muted);
-      font-style: italic;
-      font-size: 1rem;
-    }
-
-    header .profile-photo {
-      width: 120px;
-      height: 200px;
-      border-radius: 4px;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-
-    /* Divider */
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 2.5rem 0;
-    }
-
-    /* Bio */
-    .bio p {
-      margin-bottom: 1rem;
-    }
-
-    .bio p:last-child {
-      margin-bottom: 0;
-    }
-
-    /* Section headings */
-    h2 {
-      font-size: 0.8rem;
-      font-weight: normal;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 1.2rem;
-    }
-
-    /* Writing links (Substack, Glassdoor) */
-    .link-list {
-      list-style: none;
-    }
-
-    .link-list li {
-      margin-bottom: 0.8rem;
-    }
-
-    .link-list a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.15s;
-    }
-
-    .link-list a:hover {
-      border-bottom-color: var(--accent);
-    }
-
-    .link-list .link-desc {
-      display: block;
-      font-size: 0.88rem;
-      color: var(--muted);
-      margin-top: 0.1rem;
-    }
-
-    /* Papers / PDFs */
-    .paper-list {
-      list-style: none;
-    }
-
-    .paper-list li {
-      margin-bottom: 1.4rem;
-      padding-bottom: 1.4rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .paper-list li:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-
-    .paper-title {
-      display: block;
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.15s;
-      font-style: italic;
-    }
-
-    .paper-title:hover {
-      border-bottom-color: var(--accent);
-    }
-
-    .paper-meta {
-      display: block;
-      font-size: 0.88rem;
-      color: var(--muted);
-      margin-top: 0.2rem;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: 4rem;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
 
-    <header>
-      <div>
+  <nav>
+    <a class="nav-name" href="index.html">Lauren Thomas</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="writing.html">Writing &amp; Media</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="charts.html">Charts</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <div class="hero-left">
         <h1>Lauren Thomas</h1>
-        <span class="tagline">Chief Economist at Deel</span>
+        <p class="tagline">Chief Economist at Deel</p>
+        <div class="bio">
+          <p>I'm an economist and data scientist focused on the future of work and the evolution of global labor markets.</p>
+          <p>As <span class="wordmark-deel">Deel</span>'s first Economics hire, I'm currently building the company's economics function, producing original research, partnering with academics, supporting policy and communications, and helping shape products through economic insight.
+          You can read some of my work at our <a href="https://deelworks.substack.com" target="_blank" rel="noopener">Substack</a>.</p>
+
+          <p>Previously, I worked on data-driven storytelling and metric creation for the communications and policy teams at <span class="wordmark-stripe">Stripe</span>,
+          labour economics research as <span class="wordmark-glassdoor">Glassdoor</span>'s first EMEA economist, and measuring the impact of financial wellbeing products as a data scientist at a UK fintech startup.</p>
+
+          <p>I began my career as a senior research analyst at the Federal Reserve Bank of New York, and hold a Master's in Social Data Science from the University of Oxford, as well as a Master's in Economics from the University of Lyon 2,
+          where I studied as a Fulbright Scholar.</p>
+        </div>
       </div>
-      <img class="profile-photo" src="images/personal_pic.png" alt="Lauren Thomas" />
-    </header>
+      <div class="hero-right">
+        <img class="hero-photo" src="images/personal_pic.png" alt="Lauren Thomas" />
+        <div>
+          <p class="quick-links-label">Writing</p>
+          <div class="quick-link-item">
+            <a href="https://deelworks.substack.com" target="_blank" rel="noopener">Deel Works — Substack</a>
+            <span class="ql-desc">Global employment, remote work &amp; the future of the workforce</span>
+          </div>
+          <div class="quick-link-item quick-link-glassdoor">
+            <a href="https://www.glassdoor.com/blog/author/laurenthomas/" target="_blank" rel="noopener"><span class="wordmark-glassdoor">Glassdoor</span></a>
+            <span class="ql-desc">Workplace research, hiring trends &amp; labor market analysis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <hr class="divider" />
+  <footer>
+    <!-- <a href="mailto:your@email.com">your@email.com</a> -->
+  </footer>
 
-    <section class="bio">
-      <p>
-        <!-- Add a short bio here. A few sentences about who you are, what you research or write about, and where you're based. -->
-      I’m an economist and data scientist focused on the future of work and the evolution of global labor markets.
-      As Deel's first Economics hire, I'm currently building the company’s economics function, producing original research, partnering with academics, supporting policy and communications, and helping shape products through economic insight.
-      You can read some of my work at our <a href="https://www.deelworks.substack.com">Substack</a>. </p>
-      
-      <p>Previously, I worked on data-driven storytelling and metric creation for the communications and policy teams at Stripe,
-      labour economics research as Glassdoor's first EMEA economist, and measuring the impact of financial wellbeing products as a data scientist as a UK fintech.</p>
-      <p>I began my career as a senior research analyst at the Federal Reserve Bank of New York, and hold a Master's in Social Data Science from the University of Oxford, as well as a Master's in Economics from the University of Lyon 2,
-      where I studied as a Fulbright Scholar. </p>
-    </section>
-
-    <hr class="divider" />
-
-    <section>
-      <h2>Writing</h2>
-      <ul class="link-list">
-        <li>
-          <a href="https://deelworks.substack.com" target="_blank" rel="noopener">Deel Works — Substack</a>
-          <span class="link-desc">Research and commentary on global employment, remote work, and the future of the workforce.</span>
-        </li>
-        <li>
-          <a href="https://www.glassdoor.com/blog/author/laurenthomas/" target="_blank" rel="noopener">Glassdoor</a>
-          <span class="link-desc">Workplace research, hiring trends, and labor market analysis.</span>
-        </li>
-      </ul>
-    </section>
-
-    <hr class="divider" />
-
-    <section>
-      <h2>Professional Research &amp; Reports</h2>
-      <ul class="paper-list">
-
-        <!-- Copy and paste the block below for each paper or report you want to add.
-             For PDFs hosted on this site, place the file in a /papers/ folder and link to papers/filename.pdf -->
-
-        <li>
-          <a class="paper-title" href="#" target="_blank" rel="noopener">Paper or report title here</a>
-          <span class="paper-meta">Publication or venue · Year</span>
-        </li>
-
-        <li>
-          <a class="paper-title" href="#" target="_blank" rel="noopener">Another paper or report</a>
-          <span class="paper-meta">Publication or venue · Year</span>
-        </li>
-
-      </ul>
-    </section>
-
-    <hr class="divider" />
-
-    <section>
-      <h2>Theses</h2>
-      <ul class="paper-list">
-
-        <!-- Add your theses here. Place PDF files in a /papers/ folder and link to them. -->
-
-        <li>
-          <a class="paper-title" href="#" target="_blank" rel="noopener">Thesis title</a>
-          <span class="paper-meta">Institution · Year · [PDF]</span>
-        </li>
-
-      </ul>
-    </section>
-
-    <hr class="divider" />
-
-    <footer>
-      <p>
-        <!-- Optional: email link -->
-        <!-- <a href="mailto:your@email.com">your@email.com</a> -->
-      </p>
-    </footer>
-
+  <div class="copyright">
+    © Claude Opus 4.8 &amp; Lauren Thomas
   </div>
+
 </body>
 </html>
